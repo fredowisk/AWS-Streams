@@ -29,8 +29,8 @@ services:
       - localstack
     environment:
       LOCALSTACK_HOST: localstack
-      S3_PORT: 4572
-      SQS_PORT: 4576
+      S3_PORT: 4566
+      SQS_PORT: 4566
 
 volumes:
   nodemodules: {}
