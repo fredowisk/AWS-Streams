@@ -1,6 +1,4 @@
-
 service: tooling-s3-sqs
-
 
 provider:
   name: aws
@@ -20,10 +18,9 @@ provider:
     - Effect: Allow
       Action:
         - s3:*
-      Resource: 
+      Resource:
         - arn:aws:s3:::${self:provider.environment.BUCKET_NAME}/*
         - arn:aws:s3:::${self:provider.environment.BUCKET_NAME}
-
 
 plugins:
   - serverless-localstack
@@ -45,7 +42,7 @@ custom:
     useChildProcesses: true
 
 package:
-  individually: true 
+  individually: true
   excludeDevDependencies: true
 
 functions:
@@ -64,7 +61,6 @@ functions:
       - sqs:
           batchSize: 1
           arn: ${self:custom.sqsArn}
-
 
 resources:
   Resources:

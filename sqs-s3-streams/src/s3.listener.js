@@ -10,8 +10,8 @@ class Handler {
   }
 
   static getSdks() {
-    // const host = process.env.LOCALSTACK_HOST || "172.19.0.3";
-    const host = "172.19.0.3";
+    const host = process.env.LOCALSTACK_HOST || "172.18.0.2";
+    // const host = "172.18.0.2";
     const s3port = process.env.S3_PORT || "4566";
     const sqsPort = process.env.SQS_PORT || "4566";
     const isLocal = process.env.IS_LOCAL;
@@ -56,7 +56,7 @@ class Handler {
             QueueUrl: queueUrl,
             MessageBody: item,
           },
-          done
+          done()
         );
       },
     });
@@ -88,11 +88,13 @@ class Handler {
         Key: key,
       };
       //ele vai pegar um pedaço do arquivo, converter pra json, e depois processar o json
-      // this.s3Svc
-      //   .getObject(params)
-      //   .createReadStream()
-      //   .pipe(csvtojson())
-      //   .pipe(this.processDataOnDemand(queueUrl));
+      // console.log(
+      //   this.s3Svc
+      //     .getObject(params)
+      //     .createReadStream()
+      //     .pipe(csvtojson())
+      //     .pipe(this.processDataOnDemand(queueUrl))
+      // );
 
       //desta forma quem der erro primeiro para o processo
       //não precisa pegar o on(finish), ou on(close) para retornar o handler

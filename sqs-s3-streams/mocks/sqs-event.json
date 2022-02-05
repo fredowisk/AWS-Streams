@@ -3,7 +3,7 @@
       {
           "messageId": "94246b52-9cc5-4afb-8925-541db4b33975",
           "receiptHandle": "AQEBXwYR5AphedW3m2IVlYwweF4mGU23kldfe5bs7aloCXN+GF8s+DJA3Nbem5QUZWGFGUep0lkuFtdKQwlUn970kcsGAfcn2BHtvjyfHh6ty8i6pw36Bj+aGd0UCGzVMt6pouHSVQiTi4OtUkCe9QH9kduR+pKiSQh92I2YzjxvNZ01rAtaDPW+meGXguzHdtZo0ncN+Z9rGsDqpkg5YnVDke2y2lRAJWOlZA6gBzM83caBSKV5E80iHHYy29S7b0uhjY268kzDJOCU1p5k3HzW8cvSNMQqFoLVL094sAdTj36T63+0xk1LNEH+rR8e2ULaE8krRbO0SUaUz2rg+YOc7iwB81VLDDOd+ZncFn8T5uFu+8lp2viOd2yl433m4fpe+nh5ROATtwan6qz4UA4s0w==",
-          "body": "Hey ho lets go",
+          "body": "{\"name\":\"Fred\"}",
           "attributes": {
               "ApproximateReceiveCount": "1",
               "SentTimestamp": "1643644511068",
